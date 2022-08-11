@@ -92,8 +92,8 @@ async function deploy(cmd = '', files = []) {
       'deploy',
       {
         ..._generateConfigFlags(cmd),
+        // HACK
         allowLive: true,
-        skipPrompts: true,
         files,
       },
       {
