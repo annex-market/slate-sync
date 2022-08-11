@@ -92,6 +92,8 @@ async function deploy(cmd = '', files = []) {
       'deploy',
       {
         ..._generateConfigFlags(cmd),
+        allowLive: true,
+        skipPrompts: true,
         files,
       },
       {
